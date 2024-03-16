@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa de Satisfação</title>
+    </head>
+    <body>
+        <h1>Pesquisa de Satisfação</h1>
+        <section>
+            <h2>Dados Pessoais</h2>
+            <form action="" method="POST">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Nome" id="nome"/>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="E-mail" id="email"/>
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" placeholder="Telefone" id="telefone"/>
+                </p>
+        </section>
+        <section>
+                <h2>Pesquisa</h2>
+            <p>
+                <strong>1.) Está gostando do curso de web?</strong>
+                <p>
+                    <input type="radio" id="sim" name="gostando"/>
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="gostando"/>
+                    <label for="nao">Não</label>
+                </p>    
+            </p>
+            <p>
+                <strong>2.) Teve dificuldade para aprender algum código?</strong>
+                <p>
+                    <input type="radio" id="sim2" name="dificuldade" />
+                    <label for="sim2">Sim</label>
+                    <input type="radio" id="nao2" name="dificuldade" />
+                    <label for="nao2">Não</label>
+                </p> 
+            </p>
+            <p>
+                <strong>3.) Em sua opinião, qual o nível de dificuldade deste curso?</strong>
+                <p>
+                    <select>
+                        <option>Fácil</option>
+                        <option>Médio</option>
+                        <option>Difícil</option>
+                        <option>Muito Complexo</option>
+                    </select>
+                </p>
+            </p>
+        </section>
+            <p>
+                <input type="checkbox" id="autorizo" />
+                <label for="autorizo">Eu autorizo compartilhar minha resposta com terceiros</label>
+            </p>
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>
