@@ -1,0 +1,182 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.cabecalho {
+    margin-top: 60px;
+    text-align: center;
+    background-color: #474a51;
+    padding: 20px;
+    color: white;
+}
+
+.cabecalho .foto-perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid black 3px;
+    object-fit: cover;
+}
+
+.cabecalho .info {
+    margin-top: 10px;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.redes-sociais img {
+    width: 24px;
+    height: 24px;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.2);
+}
+
+.sobremim {
+    background-color: #474a51;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobremim h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.sobremim p {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #474a51;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+}
+
+#educacao {
+    text-align: center;
+}
+
+#educacao h2 {
+    margin-top: 0;
+}
+
+.educacaoitem {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#certificacoes {
+    text-align: center;
+}
+
+#certificacoes h2 {
+    margin-top: 0;
+}
+
+.certificadoitem {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.certificadoitem img {
+    display: inline-block;
+    margin: 10px auto;
+    max-width: 100%;
+    border: 5px solid white;
+    border-radius: 4px;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    cabecalho {
+        text-align: left;
+    }
+
+    cabecalho .foto-perfil, cabecalho .info, cabecalho .sobremim {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    section {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
